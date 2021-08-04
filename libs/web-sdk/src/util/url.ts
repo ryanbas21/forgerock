@@ -9,7 +9,7 @@
  */
 
 import { ConfigurablePaths, CustomPathConfig } from '../config/interfaces';
-import { StringDict } from '../shared/interfaces';
+import { StringDict } from '@forgerock/util-shared';
 import { getRealmUrlPath } from '../util/realm';
 
 /**

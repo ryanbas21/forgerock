@@ -11,8 +11,8 @@
 import { ActionTypes } from '../config/enums';
 import Config, { ConfigOptions } from '../config/index';
 import { ConfigurablePaths } from '../config/interfaces';
-import { StringDict } from '../shared/interfaces';
-import { Noop } from '../shared/types';
+import { StringDict } from '@forgerock/util-shared';
+import { Noop } from '@forgerock/util-shared';
 import TokenStorage from '../token-storage';
 import { isOkOr4xx } from '../util/http';
 import PKCE from '../util/pkce';

@@ -1,4 +1,5 @@
 /*
+ *
  * @forgerock/javascript-sdk
  *
  * constants.ts

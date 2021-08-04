@@ -17,7 +17,7 @@
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MDViYjA1MWYtZmQ4NC00MGVmLTgzODQtNzM4ZjlhY2Q1ZGVhfHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
-        "showUsageWarnijgs": true
+        "showUsageWarnings": true
       }
     }
   },
@@ -48,8 +48,7 @@
       "tags": []
     },
     "web-sdk": {
-      "tags": [],
-      "implicitDependencies": ["util-shared"]
+      "tags": []
     }
   }
 }

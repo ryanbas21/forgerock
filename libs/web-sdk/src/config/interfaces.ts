@@ -10,7 +10,7 @@
 
 import { ActionTypes } from './enums';
 import { FRCallbackFactory } from '../fr-auth/callbacks/factory';
-import { Tokens } from '../shared/interfaces';
+import { Tokens } from '@forgerock/util-shared';
 
 interface Action {
   type: ActionTypes;

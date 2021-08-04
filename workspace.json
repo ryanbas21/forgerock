@@ -231,6 +231,7 @@
           "executor": "@nrwl/web:package",
           "outputs": ["{options.outputPath}"],
           "options": {
+            "command": "npx tsc -b libs/util-shared/tsconfig.lib.json",
             "outputPath": "dist/libs/util-shared",
             "tsConfig": "libs/util-shared/tsconfig.lib.json",
             "project": "libs/util-shared/package.json",
