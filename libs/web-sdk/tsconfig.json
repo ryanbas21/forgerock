@@ -1,0 +1,42 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"declaration": true,
+		"lib": [
+			"es2015",
+			"dom"
+		],
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "./lib",
+		"sourceMap": true,
+		"target": "es2015",
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true
+	},
+	"files": [],
+	"include": [],
+	"exclude": [
+		"tests",
+		"**/*.test.ts",
+		"**/*.test.d.ts",
+		"lib",
+		"lib-esm"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.lib.json"
+		},
+		{
+			"path": "./tsconfig.spec.json"
+		}
+	]
+}
