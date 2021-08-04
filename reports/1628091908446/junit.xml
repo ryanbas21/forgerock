@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="82" failures="22" errors="0" time="4.592">
+  <testsuite name="script-parser.test.ts" errors="0" failures="4" skipped="0" timestamp="2021-08-04T15:45:10" time="1.074" tests="8">
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text with rpid and allow credentials" time="0.004">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text with quoted keys" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block from 6.5.3 text" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with rpid" time="0.021">
+      <failure>ReferenceError: TextEncoder is not defined
+    at parseWebAuthnRegisterText (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.ts:16:22)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.test.ts:61:17)
+    at Object.asyncJestTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with rpid and quoted keys" time="0.001">
+      <failure>ReferenceError: TextEncoder is not defined
+    at parseWebAuthnRegisterText (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.ts:16:22)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.test.ts:75:17)
+    at Object.asyncJestTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text withOUT rpid" time="0.001">
+      <failure>ReferenceError: TextEncoder is not defined
+    at parseWebAuthnRegisterText (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.ts:16:22)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.test.ts:89:17)
+    at Object.asyncJestTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with exclude creds" time="0">
+      <failure>ReferenceError: TextEncoder is not defined
+    at parseWebAuthnRegisterText (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.ts:16:22)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/fr-webauthn/script-parser.test.ts:94:17)
+    at Object.asyncJestTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="register-basic.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.676" tests="1">
+    <testcase classname="register-basic.lc.test.ts" name="Test basic registration flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/register-basic.lc.test.ts:16:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/register-basic.lc.test.ts:15:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authz-txn-basic.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.681" tests="1">
+    <testcase classname="authz-txn-basic.test.ts" name="Test Transaction Authorization flow encountered a declaration exception" time="0.004">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authz-txn-basic.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authz-txn-basic.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-social-login-idm.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.679" tests="1">
+    <testcase classname="authn-social-login-idm.test.ts" name="Test Social Login flow with AM nodes encountered a declaration exception" time="0.003">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-social-login-idm.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-social-login-idm.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="misc-callbacks.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.683" tests="1">
+    <testcase classname="misc-callbacks.lc.test.ts" name="Test Basic login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/misc-callbacks.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/misc-callbacks.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-platform.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.674" tests="1">
+    <testcase classname="authn-platform.lc.test.ts" name="Test Basic login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-platform.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-platform.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-oauth.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.684" tests="1">
+    <testcase classname="authn-oauth.lc.test.ts" name="Test OAuth login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-oauth.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-oauth.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authz-tree-basic.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.684" tests="1">
+    <testcase classname="authz-tree-basic.test.ts" name="Test Transaction Authorization flow encountered a declaration exception" time="0.004">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authz-tree-basic.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authz-tree-basic.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-second-factor.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.684" tests="1">
+    <testcase classname="authn-second-factor.test.ts" name="Test Second Factor login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-second-factor.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-second-factor.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-social-login-am.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.681" tests="1">
+    <testcase classname="authn-social-login-am.test.ts" name="Test Social Login flow with AM nodes encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-social-login-am.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-social-login-am.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-basic.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.69" tests="1">
+    <testcase classname="authn-basic.lc.test.ts" name="Test Basic login flow encountered a declaration exception" time="0.003">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-basic.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-basic.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-device-profile.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.642" tests="1">
+    <testcase classname="authn-device-profile.lc.test.ts" name="Test bad login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-device-profile.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-device-profile.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="config-token-storage.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.704" tests="1">
+    <testcase classname="config-token-storage.test.ts" name="Test oauth login flow with localStorage encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-token-storage.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-token-storage.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-central-login.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.719" tests="1">
+    <testcase classname="authn-central-login.test.ts" name="Test OAuth login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-central-login.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-central-login.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="config-custom-paths.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:10" time="1.71" tests="1">
+    <testcase classname="config-custom-paths.test.ts" name="Test OAuth login flow with custom paths encountered a declaration exception" time="0.006">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-custom-paths.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-custom-paths.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="validated-create-username-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.197" tests="2">
+    <testcase classname="validated-create-username-callback.test.ts" name="ValidatedCreateUsernameCallback reads/writes basic properties with &quot;validate only&quot;" time="0.004">
+    </testcase>
+    <testcase classname="validated-create-username-callback.test.ts" name="ValidatedCreateUsernameCallback writes validate only to `false` for submission" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="device-profile.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.227" tests="3">
+    <testcase classname="device-profile.test.ts" name="Test DeviceProfile should return basic metadata" time="0.016">
+    </testcase>
+    <testcase classname="device-profile.test.ts" name="Test DeviceProfile should return metadata without any display props" time="0.004">
+    </testcase>
+    <testcase classname="device-profile.test.ts" name="Test DeviceProfile should return metadata according to narrowed browser props" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-policy.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.253" tests="7">
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable error message" time="0.007">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable error message with param data" time="0.005">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable generic message for unknown error" time="0.001">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling error handling is extensible by customer" time="0.001">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling error handling is overwritable by customer" time="0.001">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling groups failed policies for one property" time="0.013">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns an object array with a human readable error and the server error" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="validated-create-password-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.217" tests="2">
+    <testcase classname="validated-create-password-callback.test.ts" name="ValidatedCreatePasswordCallback reads/writes basic properties with &quot;validate only&quot;" time="0.005">
+    </testcase>
+    <testcase classname="validated-create-password-callback.test.ts" name="ValidatedCreatePasswordCallback writes validate only to `false` for submission" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="helpers.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.259" tests="8">
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils build auth by tree req options" time="0.005">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils build auth by txn req options" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for IG auth by tree" time="0">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for REST auth by tree" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for IG auth by txn" time="0">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for REST auth by txn" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils normalizes authz by tree from IG redirect to JSON" time="0.044">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils normalizes IG redirect to JSON" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="helpers.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.217" tests="5">
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the one credential in the MetadataCallback 7.0" time="0.003">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the two credentials in the MetadataCallback 7.0" time="0.002">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the one credential in the MetadataCallback 6.5" time="0">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the two credentials in the MetadataCallback 6.5" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the pubKeyCredParams in the MetadataCallback 7.0 &amp; 6.5.3" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="dispatcher.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.222" tests="4">
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher registers and deregisters listeners" time="0.002">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher only calls listeners for the correct type" time="0">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher clears all listeners" time="0.003">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher allows multiple instances" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-email-suspend.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:11" time="0.925" tests="1">
+    <testcase classname="authn-email-suspend.test.ts" name="Test basic registration flow encountered a declaration exception" time="0.008">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-email-suspend.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-email-suspend.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="url.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.243" tests="4">
+    <testcase classname="url.test.ts" name="The URL utility correctly determines base URL" time="0.011">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly resolves paths" time="0.018">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly parses a querystring" time="0.004">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly serializes a querystring" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="config-request-middleware.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:12" time="0.377" tests="1">
+    <testcase classname="config-request-middleware.test.ts" name="Test request middleware with login flow encountered a declaration exception" time="0.001">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-request-middleware.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/config-request-middleware.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-no-session.lc.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:12" time="0.391" tests="1">
+    <testcase classname="authn-no-session.lc.test.ts" name="Test Basic login flow encountered a declaration exception" time="0.002">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-no-session.lc.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-no-session.lc.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="authn-basic.lc.neg.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T15:45:12" time="0.384" tests="1">
+    <testcase classname="authn-basic.lc.neg.test.ts" name="Test bad login flow encountered a declaration exception" time="0.001">
+      <failure>TypeError: Cannot read property &apos;forEach&apos; of undefined
+    at Suite.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-basic.lc.neg.test.ts:15:12)
+    at addSpecsToSuite (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:444:51)
+    at Env.describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/Env.js:414:11)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/jasmine/jasmineLight.js:88:18)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/e2e/suites/authn-basic.lc.neg.test.ts:14:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:1299:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:898:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runtime/build/index.js:746:10)
+    at jasmine2 (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-jasmine2/build/index.js:230:13)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:380:22)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/ryan.basmajian/programming/forgerock/node_modules/@jest/core/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-webauthn.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.388" tests="10">
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 6.5.3 &quot;Passwordless&quot; should return Registration type with register text-output callbacks" time="0.003">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 6.5.3 &quot;Passwordless&quot; should return Authentication type with authenticate text-output callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Registration type with register text-output callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Authentication type with authenticate text-output callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Registration type with register metadata callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Authentication type with authenticate metadata callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Registration type with register text-output callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Authentication type with authenticate text-output callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Registration type with register metadata callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Authentication type with authenticate metadata callbacks" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="recovery-codes.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.324" tests="3">
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return true if Display Recovery Codes step" time="0.002">
+    </testcase>
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return false if not Display Recovery Codes step" time="0.001">
+    </testcase>
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return the Recovery Codes as array of strings" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-auth.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.391" tests="1">
+    <testcase classname="fr-auth.test.ts" name="Test FRAuth.next functionality should be able to make initial next step" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="attribute-input-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.187" tests="2">
+    <testcase classname="attribute-input-callback.test.ts" name="AttributeInputCallback reads/writes basic properties with &quot;validate only&quot;" time="0.003">
+    </testcase>
+    <testcase classname="attribute-input-callback.test.ts" name="AttributeInputCallback writes validate only to `false` for submission" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="script-parser.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.137" tests="1">
+    <testcase classname="script-parser.test.ts" name="Parsing of the Display Recovery Codes script text should parse the Display Recovery Codes Text" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="realm.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.146" tests="1">
+    <testcase classname="realm.test.ts" name="The realm utility creates the correct paths" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-auth-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.149" tests="1">
+    <testcase classname="fr-auth-callback.test.ts" name="FRCallback reads/writes basic properties" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="oauth2-client.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.237" tests="1">
+    <testcase classname="oauth2-client.test.ts" name="Test OAuth2Client methods should construct proper authorization URL" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="pkce.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T15:45:12" time="0.193" tests="1">
+    <testcase classname="pkce.test.ts" name="The PKCE module creates verifiers and challenges in the correct format" time="0.045">
+    </testcase>
+  </testsuite>
+</testsuites>

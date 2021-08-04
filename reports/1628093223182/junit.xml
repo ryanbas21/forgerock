@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="60" failures="7" errors="0" time="13.517">
+  <testsuite name="script-parser.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:04" time="2.193" tests="8">
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text with rpid and allow credentials" time="0.004">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text with quoted keys" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block from 6.5.3 text" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn authenticate block of text" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with rpid" time="0.007">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with rpid and quoted keys" time="0.003">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text withOUT rpid" time="0.001">
+    </testcase>
+    <testcase classname="script-parser.test.ts" name="Parsing of the WebAuthn script type text should parse the WebAuthn register block of text with exclude creds" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="helpers.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.282" tests="5">
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the one credential in the MetadataCallback 7.0" time="0.003">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the two credentials in the MetadataCallback 7.0" time="0.006">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the one credential in the MetadataCallback 6.5" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the two credentials in the MetadataCallback 6.5" time="0">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test WebAuthn helper functions should parse the pubKeyCredParams in the MetadataCallback 7.0 &amp; 6.5.3" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="url.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.359" tests="4">
+    <testcase classname="url.test.ts" name="The URL utility correctly determines base URL" time="0.007">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly resolves paths" time="0.011">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly parses a querystring" time="0.003">
+    </testcase>
+    <testcase classname="url.test.ts" name="The URL utility correctly serializes a querystring" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="dispatcher.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.377" tests="4">
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher registers and deregisters listeners" time="0.018">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher only calls listeners for the correct type" time="0.001">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher clears all listeners" time="0.006">
+    </testcase>
+    <testcase classname="dispatcher.test.ts" name="The event dispatcher allows multiple instances" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="validated-create-password-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.417" tests="2">
+    <testcase classname="validated-create-password-callback.test.ts" name="ValidatedCreatePasswordCallback reads/writes basic properties with &quot;validate only&quot;" time="0.005">
+    </testcase>
+    <testcase classname="validated-create-password-callback.test.ts" name="ValidatedCreatePasswordCallback writes validate only to `false` for submission" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="validated-create-username-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.42" tests="2">
+    <testcase classname="validated-create-username-callback.test.ts" name="ValidatedCreateUsernameCallback reads/writes basic properties with &quot;validate only&quot;" time="0.005">
+    </testcase>
+    <testcase classname="validated-create-username-callback.test.ts" name="ValidatedCreateUsernameCallback writes validate only to `false` for submission" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-auth-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.17" tests="1">
+    <testcase classname="fr-auth-callback.test.ts" name="FRCallback reads/writes basic properties" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="realm.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.175" tests="1">
+    <testcase classname="realm.test.ts" name="The realm utility creates the correct paths" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="attribute-input-callback.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.228" tests="2">
+    <testcase classname="attribute-input-callback.test.ts" name="AttributeInputCallback reads/writes basic properties with &quot;validate only&quot;" time="0.007">
+    </testcase>
+    <testcase classname="attribute-input-callback.test.ts" name="AttributeInputCallback writes validate only to `false` for submission" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-policy.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.584" tests="7">
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable error message" time="0.002">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable error message with param data" time="0">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns a human readable generic message for unknown error" time="0.001">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling error handling is extensible by customer" time="0">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling error handling is overwritable by customer" time="0.001">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling groups failed policies for one property" time="0.003">
+    </testcase>
+    <testcase classname="fr-policy.test.ts" name="The IDM error handling returns an object array with a human readable error and the server error" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="script-parser.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.21" tests="1">
+    <testcase classname="script-parser.test.ts" name="Parsing of the Display Recovery Codes script text should parse the Display Recovery Codes Text" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-webauthn.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.81" tests="10">
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 6.5.3 &quot;Passwordless&quot; should return Registration type with register text-output callbacks" time="0.002">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 6.5.3 &quot;Passwordless&quot; should return Authentication type with authenticate text-output callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Registration type with register text-output callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Authentication type with authenticate text-output callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Registration type with register metadata callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Passwordless&quot; should return Authentication type with authenticate metadata callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Registration type with register text-output callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Authentication type with authenticate text-output callbacks" time="0.001">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Registration type with register metadata callbacks" time="0">
+    </testcase>
+    <testcase classname="fr-webauthn.test.ts" name="Test FRWebAuthn class with 7.0 &quot;Usernameless&quot; should return Authentication type with authenticate metadata callbacks" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="recovery-codes.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.802" tests="3">
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return true if Display Recovery Codes step" time="0.002">
+    </testcase>
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return false if not Display Recovery Codes step" time="0">
+    </testcase>
+    <testcase classname="recovery-codes.test.ts" name="Class for managing the Display Recovery Codes node should return the Recovery Codes as array of strings" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="fr-auth.test.ts" errors="0" failures="0" skipped="0" timestamp="2021-08-04T16:07:07" time="0.815" tests="1">
+    <testcase classname="fr-auth.test.ts" name="Test FRAuth.next functionality should be able to make initial next step" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="oauth2-client.test.ts" errors="0" failures="1" skipped="0" timestamp="2021-08-04T16:07:07" time="0.539" tests="1">
+    <testcase classname="oauth2-client.test.ts" name="Test OAuth2Client methods should construct proper authorization URL" time="0.009">
+      <failure>Error: Test functions cannot both take a &apos;done&apos; callback and return something. Either use a &apos;done&apos; callback, or return a promise.
+Returned value: Promise {}
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/integration/oauth2-client.test.ts:38:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/tests/integration/oauth2-client.test.ts:37:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="helpers.test.ts" errors="0" failures="6" skipped="0" timestamp="2021-08-04T16:07:07" time="10.517" tests="8">
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils build auth by tree req options" time="0.004">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils build auth by txn req options" time="0.001">
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for IG auth by tree" time="0.002">
+      <failure>Error: Test functions cannot both take a &apos;done&apos; callback and return something. Either use a &apos;done&apos; callback, or return a promise.
+Returned value: Promise {}
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:64:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for REST auth by tree" time="0.001">
+      <failure>Error: Test functions cannot both take a &apos;done&apos; callback and return something. Either use a &apos;done&apos; callback, or return a promise.
+Returned value: Promise {}
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:70:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for IG auth by txn" time="0.001">
+      <failure>Error: Test functions cannot both take a &apos;done&apos; callback and return something. Either use a &apos;done&apos; callback, or return a promise.
+Returned value: Promise {}
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:76:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils examines response for REST auth by txn" time="0">
+      <failure>Error: Test functions cannot both take a &apos;done&apos; callback and return something. Either use a &apos;done&apos; callback, or return a promise.
+Returned value: Promise {}
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:82:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils normalizes authz by tree from IG redirect to JSON" time="5.006">
+      <failure>ReferenceError: DOMParser is not defined
+    at getXMLValueFromURL (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.ts:132:18)
+    at normalizeIGJSON (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.ts:172:53)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:95:26)
+    at Promise.then.completed (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/utils.js:380:26)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/utils.js:315:10)
+    at _callCircusTest (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at _runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:66:9)</failure>
+      <failure>Error: thrown: &quot;Exceeded timeout of 5000 ms for a test.
+Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.&quot;
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:88:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+    <testcase classname="helpers.test.ts" name="Test HttpClient utils normalizes IG redirect to JSON" time="5.005">
+      <failure>ReferenceError: DOMParser is not defined
+    at getXMLValueFromURL (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.ts:132:18)
+    at normalizeIGJSON (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.ts:174:43)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:107:26)
+    at Promise.then.completed (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/utils.js:380:26)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/utils.js:315:10)
+    at _callCircusTest (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/run.js:60:9)</failure>
+      <failure>Error: thrown: &quot;Exceeded timeout of 5000 ms for a test.
+Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.&quot;
+    at /Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:100:3
+    at _dispatchDescribe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:97:26)
+    at describe (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/index.js:60:5)
+    at Object.&lt;anonymous&gt; (/Users/ryan.basmajian/programming/forgerock/libs/web-sdk/src/http-client/helpers.test.ts:26:1)
+    at Runtime._execModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:1394:24)
+    at Runtime._loadModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:996:12)
+    at Runtime.requireModule (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runtime/build/index.js:828:12)
+    at jestAdapter (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:13)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at runTestInternal (/Users/ryan.basmajian/programming/forgerock/node_modules/jest-runner/build/runTest.js:389:16)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

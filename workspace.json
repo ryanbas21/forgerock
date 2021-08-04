@@ -222,6 +222,46 @@
         }
       }
     },
+    "util-shared": {
+      "root": "libs/util-shared",
+      "sourceRoot": "libs/util-shared/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-shared",
+            "tsConfig": "libs/util-shared/tsconfig.lib.json",
+            "project": "libs/util-shared/package.json",
+            "entryFile": "libs/util-shared/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/util-shared/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-shared/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-shared"],
+          "options": {
+            "jestConfig": "libs/util-shared/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "web-sdk": {
       "root": "libs/web-sdk",
       "sourceRoot": "libs/web-sdk/src",
@@ -236,7 +276,7 @@
             "project": "libs/web-sdk/package.json",
             "entryFile": "libs/web-sdk/src/index.ts",
             "external": ["react/jsx-runtime"],
-            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "webpackConfig": "@nrwl/react/plugins/bundle-rollup",
             "assets": [
               {
                 "glob": "libs/web-sdk/README.md",

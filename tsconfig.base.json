@@ -1,33 +1,24 @@
 {
-	"compileOnSave": false,
-	"compilerOptions": {
-		"rootDir": ".",
-		"sourceMap": true,
-		"declaration": false,
-		"moduleResolution": "node",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"importHelpers": true,
-		"target": "es2015",
-		"module": "esnext",
-		"lib": [
-			"es2017",
-			"dom"
-		],
-		"skipLibCheck": true,
-		"skipDefaultLibCheck": true,
-		"baseUrl": ".",
-		"paths": {
-			"@forgerock/javascript-sdk": [
-				"libs/web-sdk/src/index.ts"
-			],
-			"@forgerock/web-sdk": [
-				"libs/web-sdk/src/index.ts"
-			]
-		}
-	},
-	"exclude": [
-		"node_modules",
-		"tmp"
-	]
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "es2015",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "@forgerock/javascript-sdk": ["libs/web-sdk/src/index.ts"],
+      "@forgerock/web-sdk": ["libs/web-sdk/src/index.ts"],
+      "@forgerock/util-shared": ["libs/util-shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
 }

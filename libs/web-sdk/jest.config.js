@@ -1,6 +1,5 @@
 module.exports = {
   displayName: 'web-sdk',
-  preset: '../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
