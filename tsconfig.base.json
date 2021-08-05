@@ -15,9 +15,26 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
+      "@forgerock/feature-fr-auth": ["libs/feature-fr-auth/src/index.ts"],
+      "@forgerock/feature-fr-device": ["libs/feature-fr-device/src/index.ts"],
+      "@forgerock/feature-fr-policy": ["libs/feature-fr-policy/src/index.ts"],
+      "@forgerock/feature-fr-recovery-codes": ["libs/feature-fr-recovery-codes/src/index.ts"],
+      "@forgerock/feature-fr-ui": ["libs/feature-fr-ui/src/index.ts"],
+      "@forgerock/feature-fr-user": ["libs/feature-fr-user/src/index.ts"],
+      "@forgerock/feature-fr-webauthn": ["libs/feature-fr-webauthn/src/index.ts"],
+      "@forgerock/feature-oauth2-client": ["libs/feature-oauth2-client/src/index.ts"],
+      "@forgerock/feature-user-manager": ["libs/feature-user-manager/src/index.ts"],
       "@forgerock/javascript-sdk": ["libs/web-sdk/src/index.ts"],
-      "@forgerock/web-sdk": ["libs/web-sdk/src/index.ts"],
-      "@forgerock/util-shared": ["libs/util-shared/src/index.ts"]
+      "@forgerock/util-auth": ["libs/util-auth/src/index.ts"],
+      "@forgerock/util-config": ["libs/util-config/src/index.ts"],
+      "@forgerock/util-event": ["libs/util-event/src/index.ts"],
+      "@forgerock/util-http-client": ["libs/util-http-client/src/index.ts"],
+      "@forgerock/util-session-manager": ["libs/util-session-manager/src/index.ts"],
+      "@forgerock/util-shared": ["libs/util-shared/src/index.ts"],
+      "@forgerock/util-token-manager": ["libs/util-token-manager/src/index.ts"],
+      "@forgerock/util-token-storage": ["libs/util-token-storage/src/index.ts"],
+      "@forgerock/utils": ["libs/utils/src/index.ts"],
+      "@forgerock/web-sdk": ["libs/web-sdk/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

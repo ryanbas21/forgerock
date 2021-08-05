@@ -84,7 +84,7 @@ const getTestToken = async (): Promise<Tokens | undefined | string> => {
   return token;
 };
 
-jest.mock('../config/index', () => ({
+jest.mock('@forgerock/util-config', () => ({
   get: (): ConfigOptions => config,
 }));
 

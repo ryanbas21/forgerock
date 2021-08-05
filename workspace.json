@@ -222,6 +222,471 @@
         }
       }
     },
+    "feature-fr-auth": {
+      "root": "libs/feature-fr-auth",
+      "sourceRoot": "libs/feature-fr-auth/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-auth",
+            "main": "libs/feature-fr-auth/src/index.ts",
+            "tsConfig": "libs/feature-fr-auth/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-auth/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-auth/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-auth"],
+          "options": {
+            "jestConfig": "libs/feature-fr-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-device": {
+      "root": "libs/feature-fr-device",
+      "sourceRoot": "libs/feature-fr-device/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-device",
+            "main": "libs/feature-fr-device/src/index.ts",
+            "tsConfig": "libs/feature-fr-device/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-device/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-device/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-device"],
+          "options": {
+            "jestConfig": "libs/feature-fr-device/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-policy": {
+      "root": "libs/feature-fr-policy",
+      "sourceRoot": "libs/feature-fr-policy/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-policy",
+            "main": "libs/feature-fr-policy/src/index.ts",
+            "tsConfig": "libs/feature-fr-policy/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-policy/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-policy/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-policy"],
+          "options": {
+            "jestConfig": "libs/feature-fr-policy/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-recovery-codes": {
+      "root": "libs/feature-fr-recovery-codes",
+      "sourceRoot": "libs/feature-fr-recovery-codes/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-recovery-codes",
+            "main": "libs/feature-fr-recovery-codes/src/index.ts",
+            "tsConfig": "libs/feature-fr-recovery-codes/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-recovery-codes/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-recovery-codes/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-recovery-codes"],
+          "options": {
+            "jestConfig": "libs/feature-fr-recovery-codes/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-ui": {
+      "root": "libs/feature-fr-ui",
+      "sourceRoot": "libs/feature-fr-ui/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-ui",
+            "main": "libs/feature-fr-ui/src/index.ts",
+            "tsConfig": "libs/feature-fr-ui/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-ui/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-ui/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-ui"],
+          "options": {
+            "jestConfig": "libs/feature-fr-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-user": {
+      "root": "libs/feature-fr-user",
+      "sourceRoot": "libs/feature-fr-user/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-user",
+            "main": "libs/feature-fr-user/src/index.ts",
+            "tsConfig": "libs/feature-fr-user/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-user/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-user/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-user"],
+          "options": {
+            "jestConfig": "libs/feature-fr-user/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-fr-webauthn": {
+      "root": "libs/feature-fr-webauthn",
+      "sourceRoot": "libs/feature-fr-webauthn/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-fr-webauthn",
+            "main": "libs/feature-fr-webauthn/src/index.ts",
+            "tsConfig": "libs/feature-fr-webauthn/tsconfig.lib.json",
+            "assets": ["libs/feature-fr-webauthn/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-fr-webauthn/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-fr-webauthn"],
+          "options": {
+            "jestConfig": "libs/feature-fr-webauthn/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-oauth2-client": {
+      "root": "libs/feature-oauth2-client",
+      "sourceRoot": "libs/feature-oauth2-client/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-oauth2-client",
+            "main": "libs/feature-oauth2-client/src/index.ts",
+            "tsConfig": "libs/feature-oauth2-client/tsconfig.lib.json",
+            "assets": ["libs/feature-oauth2-client/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/feature-oauth2-client/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-oauth2-client"],
+          "options": {
+            "jestConfig": "libs/feature-oauth2-client/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-user-manager": {
+      "root": "libs/feature-user-manager",
+      "sourceRoot": "libs/feature-user-manager/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/feature-user-manager",
+            "main": "libs/feature-user-manager/src/index.ts",
+            "tsConfig": "libs/feature-user-manager/tsconfig.lib.json",
+            "assets": ["libs/feature-user-manager/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-user-manager/tsconfig.lib.json",
+              "libs/feature-user-manager/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/feature-user-manager/**/*"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature-user-manager"],
+          "options": {
+            "jestConfig": "libs/feature-user-manager/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-auth": {
+      "root": "libs/util-auth",
+      "sourceRoot": "libs/util-auth/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-auth",
+            "tsConfig": "libs/util-auth/tsconfig.lib.json",
+            "project": "libs/util-auth/package.json",
+            "entryFile": "libs/util-auth/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/util-auth/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-auth/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-auth"],
+          "options": {
+            "jestConfig": "libs/util-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-config": {
+      "root": "libs/util-config",
+      "sourceRoot": "libs/util-config/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-config",
+            "tsConfig": "libs/util-config/tsconfig.lib.json",
+            "project": "libs/util-config/package.json",
+            "entryFile": "libs/util-config/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/util-config/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-config/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-config"],
+          "options": {
+            "jestConfig": "libs/util-config/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-event": {
+      "root": "libs/util-event",
+      "sourceRoot": "libs/util-event/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-event",
+            "tsConfig": "libs/util-event/tsconfig.lib.json",
+            "project": "libs/util-event/package.json",
+            "entryFile": "libs/util-event/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "assets": [
+              {
+                "glob": "libs/util-event/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-event/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-event"],
+          "options": {
+            "jestConfig": "libs/util-event/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-http-client": {
+      "root": "libs/util-http-client",
+      "sourceRoot": "libs/util-http-client/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-http-client",
+            "main": "libs/util-http-client/src/index.ts",
+            "tsConfig": "libs/util-http-client/tsconfig.lib.json",
+            "assets": ["libs/util-http-client/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-http-client/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-http-client"],
+          "options": {
+            "jestConfig": "libs/util-http-client/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-session-manager": {
+      "root": "libs/util-session-manager",
+      "sourceRoot": "libs/util-session-manager/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-session-manager",
+            "main": "libs/util-session-manager/src/index.ts",
+            "tsConfig": "libs/util-session-manager/tsconfig.lib.json",
+            "assets": ["libs/util-session-manager/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-session-manager/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-session-manager"],
+          "options": {
+            "jestConfig": "libs/util-session-manager/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "util-shared": {
       "root": "libs/util-shared",
       "sourceRoot": "libs/util-shared/src",
@@ -258,6 +723,99 @@
           "outputs": ["coverage/libs/util-shared"],
           "options": {
             "jestConfig": "libs/util-shared/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-token-manager": {
+      "root": "libs/util-token-manager",
+      "sourceRoot": "libs/util-token-manager/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-token-manager",
+            "main": "libs/util-token-manager/src/index.ts",
+            "tsConfig": "libs/util-token-manager/tsconfig.lib.json",
+            "assets": ["libs/util-token-manager/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-token-manager/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-token-manager"],
+          "options": {
+            "jestConfig": "libs/util-token-manager/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "util-token-storage": {
+      "root": "libs/util-token-storage",
+      "sourceRoot": "libs/util-token-storage/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/util-token-storage",
+            "main": "libs/util-token-storage/src/index.ts",
+            "tsConfig": "libs/util-token-storage/tsconfig.lib.json",
+            "assets": ["libs/util-token-storage/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/util-token-storage/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/util-token-storage"],
+          "options": {
+            "jestConfig": "libs/util-token-storage/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "utils": {
+      "root": "libs/utils",
+      "sourceRoot": "libs/utils/src",
+      "projectType": "library",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/workspace:tsc",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/utils",
+            "main": "libs/utils/src/index.ts",
+            "tsConfig": "libs/utils/tsconfig.lib.json",
+            "assets": ["libs/utils/*.md"]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/utils/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/utils"],
+          "options": {
+            "jestConfig": "libs/utils/jest.config.js",
             "passWithNoTests": true
           }
         }

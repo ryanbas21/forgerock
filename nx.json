@@ -44,7 +44,58 @@
       "tags": [],
       "implicitDependencies": ["example-app-react"]
     },
+    "feature-fr-auth": {
+      "tags": []
+    },
+    "feature-fr-device": {
+      "tags": []
+    },
+    "feature-fr-policy": {
+      "tags": []
+    },
+    "feature-fr-recovery-codes": {
+      "tags": []
+    },
+    "feature-fr-ui": {
+      "tags": []
+    },
+    "feature-fr-user": {
+      "tags": []
+    },
+    "feature-fr-webauthn": {
+      "tags": []
+    },
+    "feature-oauth2-client": {
+      "tags": []
+    },
+    "feature-user-manager": {
+      "tags": []
+    },
+    "util-auth": {
+      "tags": []
+    },
+    "util-config": {
+      "tags": []
+    },
+    "util-event": {
+      "tags": []
+    },
+    "util-http-client": {
+      "tags": []
+    },
+    "util-session-manager": {
+      "tags": []
+    },
     "util-shared": {
+      "tags": []
+    },
+    "util-token-manager": {
+      "tags": []
+    },
+    "util-token-storage": {
+      "tags": []
+    },
+    "utils": {
       "tags": []
     },
     "web-sdk": {
