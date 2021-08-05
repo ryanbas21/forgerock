@@ -1,4 +1,4 @@
-export { default } from './lib/';
+export { default as FRAuth } from './lib/';
 export * from './lib/enums'
 export { default as FRLoginFailure } from './lib/fr-login-failure'
 export { default as FRLoginSuccess } from './lib/fr-login-success'

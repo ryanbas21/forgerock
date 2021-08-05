@@ -8,7 +8,7 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import { FRStep } from '@forgerock/feature-fr-auth/fr-step';
+import { FRStep } from '@forgerock/feature-fr-auth';
 import FRRecoveryCodes from './index';
 import {
   displayRecoveryCodesResponse,

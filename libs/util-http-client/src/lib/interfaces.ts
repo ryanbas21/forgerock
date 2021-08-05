@@ -9,7 +9,7 @@
  */
 
 import { ConfigOptions } from '@forgerock/util-config';
-import FRStep from '@forgerock/feature-fr-auth';
+import { FRStep } from '@forgerock/feature-fr-auth';
 
 export interface Advices {
   AuthenticateToServiceConditionAdvice?: string[];

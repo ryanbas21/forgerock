@@ -9,7 +9,7 @@
  */
 
 import Config, { ConfigOptions } from '@forgerock/util-config';
-import OAuth2Client, { allowedErrors, OAuth2Tokens, ResponseType } from '@forgerock/feature-oauth2-client';
+import { OAuth2Client, allowedErrors, OAuth2Tokens, ResponseType } from '@forgerock/feature-oauth2-client';
 import { StringDict, Tokens } from '@forgerock/util-shared';
 import TokenStorage from '@forgerock/util-token-storage';
 import { PKCE } from '@forgerock/utils';

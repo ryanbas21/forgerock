@@ -9,7 +9,7 @@
  */
 
 import { ActionTypes } from './enums';
-import { FRCallbackFactory } from '@forgerock/feature-fr-auth';
+// import { FRCallbackFactory } from '@forgerock/feature-fr-auth';
 import { Tokens } from '@forgerock/util-shared';
 
 interface Action {
@@ -22,7 +22,7 @@ interface Action {
  * Configuration options.
  */
 interface ConfigOptions {
-  callbackFactory?: FRCallbackFactory;
+  callbackFactory?: any; //FRCallbackFactory;
   clientId?: string;
   middleware?: RequestMiddleware[];
   realmPath?: string;

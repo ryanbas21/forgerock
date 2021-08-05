@@ -8,7 +8,7 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import { CallbackType } from '../auth/enums';
+import { CallbackType } from '@forgerock/util-auth';
 
 /* eslint-disable max-len */
 const displayRecoveryCodes = `/*

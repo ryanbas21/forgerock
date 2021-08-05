@@ -10,14 +10,14 @@
 
 import Config, { ActionTypes } from '@forgerock/util-config';
 import Dispatcher from '@forgerock/util-event';
-import FRAuth, { FRStep, StepType } from '@forgerock/feature-fr-auth';
+import { FRAuth, FRStep, StepType } from '@forgerock/feature-fr-auth';
 import {
   HandleStep,
   HttpClientRequestOptions,
   RequiresNewTokenFn,
   AuthorizationJSON,
 } from './interfaces';
-import TokenManager from '@forgerock/util-token-manager';
+import { TokenManager } from '@forgerock/util-token-manager';
 import TokenStorage from '@forgerock/util-token-storage';
 import { withTimeout } from '@forgerock/utils'
 import {

@@ -9,9 +9,12 @@
  */
 
 import { CallbackType } from '@forgerock/util-auth';
-import HiddenValueCallback from '../@forgerock/feature-fr-auth/callbacks/hidden-value-callback';
-import MetadataCallback from '../@forgerock/feature-fr-auth/callbacks/metadata-callback';
-import FRStep from '../@forgerock/feature-fr-auth/fr-step';
+import {
+        HiddenValueCallback,
+        MetadataCallback, 
+        FRStep,
+        TextOutputCallback
+      } from '@forgerock/feature-fr-auth';
 import { WebAuthnOutcome, WebAuthnOutcomeType, WebAuthnStepType } from './enums';
 import {
   arrayBufferToString,
@@ -26,7 +29,6 @@ import {
   WebAuthnRegistrationMetadata,
   WebAuthnTextOutputRegistration,
 } from './interfaces';
-import TextOutputCallback from '../@forgerock/feature-fr-auth/callbacks/text-output-callback';
 import { parseWebAuthnAuthenticateText, parseWebAuthnRegisterText } from './script-parser';
 
 // JSON-based WebAuthn

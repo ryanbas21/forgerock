@@ -11,10 +11,8 @@
 import Config, { ActionTypes, ServerConfig } from '@forgerock/util-config';
 import { REQUESTED_WITH } from '@forgerock/util-shared';
 import { StringDict } from '@forgerock/util-shared';
-import { withTimeout } from '@forgerock/utils';
-import { getEndpointPath, resolve, stringify } from '@forgerock/utils';
 import { Step, StepOptions } from './interfaces';
-import { middlewareWrapper } from '@forgerock/utils';
+import { getEndpointPath, resolve, stringify, withTimeout, middlewareWrapper } from '@forgerock/utils';
 
 /**
  * Provides direct access to the OpenAM authentication tree API.

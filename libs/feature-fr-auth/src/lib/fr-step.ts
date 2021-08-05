@@ -8,8 +8,7 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import { CallbackType } from '@forgerock/util-auth';
-import { Callback, Step } from '@forgerock/util-auth';
+import { CallbackType, Callback, Step } from '@forgerock/util-auth';
 import FRCallback from './callbacks';
 import createCallback, { FRCallbackFactory } from './callbacks/factory';
 import { StepType } from './enums';

@@ -22,7 +22,7 @@ import {
   webAuthnRegMetaCallback70StoredUsername,
   webAuthnAuthMetaCallback70StoredUsername,
 } from './fr-webauthn.mock.data';
-import FRStep from '../@forgerock/feature-fr-auth/fr-step';
+import FRStep from '@forgerock/feature-fr-auth/fr-step';
 
 describe('Test FRWebAuthn class with 6.5.3 "Passwordless"', () => {
   it('should return Registration type with register text-output callbacks', () => {

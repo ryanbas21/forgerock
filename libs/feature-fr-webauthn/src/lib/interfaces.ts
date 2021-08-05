@@ -8,9 +8,11 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import HiddenValueCallback from '../@forgerock/feature-fr-auth/callbacks/hidden-value-callback';
-import MetadataCallback from '../@forgerock/feature-fr-auth/callbacks/metadata-callback';
-import TextOutputCallback from '../@forgerock/feature-fr-auth/callbacks/text-output-callback';
+import {
+  HiddenValueCallback ,
+  MetadataCallback ,
+  TextOutputCallback
+} from '@forgerock/feature-fr-auth';
 
 enum AttestationType {
   Direct = 'direct',
