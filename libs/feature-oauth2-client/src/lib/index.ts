@@ -8,14 +8,14 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import Config, { ActionTypes, ConfigurablePaths, ConfigOptions  } from '@forgerock/util-config';
+import Config, { ActionTypes, ConfigurablePaths, ConfigOptions } from '@forgerock/util-config';
 import { StringDict } from '@forgerock/util-shared';
 import { Noop } from '@forgerock/util-shared';
 import TokenStorage from '@forgerock/util-token-storage';
-import { isOkOr4xx } from '@forgerock/utils'
-import { PKCE } from '@forgerock/utils'
-import { withTimeout } from '@forgerock/utils'
-import { getEndpointPath, resolve, stringify } from '@forgerock/utils'
+import { isOkOr4xx } from '@forgerock/utils';
+import { PKCE } from '@forgerock/utils';
+import { withTimeout } from '@forgerock/utils';
+import { getEndpointPath, resolve, stringify } from '@forgerock/utils';
 import { ResponseType } from './enums';
 import {
   AccessTokenResponse,
@@ -23,7 +23,7 @@ import {
   GetOAuth2TokensOptions,
   OAuth2Tokens,
 } from './interfaces';
-import { middlewareWrapper } from '@forgerock/utils'
+import { middlewareWrapper } from '@forgerock/utils';
 
 const allowedErrors = {
   // AM error for consent requirement

@@ -21,7 +21,7 @@ import {
   AuthorizationJSON,
 } from './interfaces';
 import { Tokens } from '@forgerock/util-shared';
-import { getEndpointPath, resolve, stringify } from '@forgerock/utils'
+import { getEndpointPath, resolve, stringify } from '@forgerock/utils';
 
 export function addAuthzInfoToHeaders(
   init: RequestInit,

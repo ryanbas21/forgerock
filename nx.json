@@ -30,12 +30,12 @@
     ]
   },
   "projects": {
-    "angular-example-app": {
+    "example-app-angular": {
       "tags": []
     },
-    "angular-example-app-e2e": {
+    "example-app-angular-e2e": {
       "tags": [],
-      "implicitDependencies": ["angular-example-app"]
+      "implicitDependencies": ["example-app-angular"]
     },
     "example-app-react": {
       "tags": []
@@ -43,6 +43,20 @@
     "example-app-react-e2e": {
       "tags": [],
       "implicitDependencies": ["example-app-react"]
+    },
+    "example-app-svelte": {
+      "tags": []
+    },
+    "example-app-svelte-e2e": {
+      "tags": [],
+      "implicitDependencies": ["example-app-svelte"]
+    },
+    "example-app-vue": {
+      "tags": []
+    },
+    "example-app-vue-e2e": {
+      "tags": [],
+      "implicitDependencies": ["example-app-vue"]
     },
     "feature-fr-auth": {
       "tags": []

@@ -1,35 +1,32 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-	  "declaration": true,
-	  "lib": ["es2015","dom"],
-	  "module": "es2015",
-	  "moduleResolution": "node",
-	  "noImplicitAny": true,
-	  "noImplicitThis": true,
-	  "noUnusedLocals": true,
-	  "noUnusedParameters": true,
-	  "outDir": "./lib",
-	  "sourceMap": true,
-	  "target": "es2015",
-	  "allowSyntheticDefaultImports": true,
-	  "forceConsistentCasingInFileNames": true,
-	  "strict": true,
-	  "noImplicitReturns": true,
-	  "noFallthroughCasesInSwitch": true
+    "declaration": true,
+    "lib": ["es2015", "dom"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./lib",
+    "sourceMap": true,
+    "target": "es2015",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
   },
   "files": [],
   "include": [],
-  "exclude": [
-	  "lib",
-	  "lib-esm"
-  ],
+  "exclude": ["lib", "lib-esm"],
   "references": [
-	  {
-		  "path": "./tsconfig.lib.json"
-	  },
-	  {
-		  "path": "./tsconfig.spec.json"
-	  }
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
   ]
 }

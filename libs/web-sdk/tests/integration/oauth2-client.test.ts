@@ -42,7 +42,9 @@ describe('Test OAuth2Client methods', () => {
     const authorizeUrl = await OAuth2Client.createAuthorizeUrl(authorizeUrlOptions);
     console.log(authorizeUrl);
     // eslint-disable-next-line
-    expect(authorizeUrl).toBe('https://openam.example.com/am/oauth2/realms/root/realms/alpha/authorize?client_id=OAuth2ClientID&response_type=code&scope=openid%20email%20profile&state=1234&code_challenge=wxyz&code_challenge_method=S256');
+    expect(authorizeUrl).toBe(
+      'https://openam.example.com/am/oauth2/realms/root/realms/alpha/authorize?client_id=OAuth2ClientID&response_type=code&scope=openid%20email%20profile&state=1234&code_challenge=wxyz&code_challenge_method=S256',
+    );
     done();
   });
 });

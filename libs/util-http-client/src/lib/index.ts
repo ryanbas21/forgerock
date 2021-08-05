@@ -19,7 +19,7 @@ import {
 } from './interfaces';
 import { TokenManager } from '@forgerock/util-token-manager';
 import TokenStorage from '@forgerock/util-token-storage';
-import { withTimeout } from '@forgerock/utils'
+import { withTimeout } from '@forgerock/utils';
 import {
   addAuthzInfoToHeaders,
   addAuthzInfoToURL,
@@ -32,7 +32,7 @@ import {
   normalizeIGJSON,
   normalizeRESTJSON,
 } from './helpers';
-import { middlewareWrapper } from '@forgerock/utils'
+import { middlewareWrapper } from '@forgerock/utils';
 
 /**
  * HTTP client that includes bearer token injection and refresh.

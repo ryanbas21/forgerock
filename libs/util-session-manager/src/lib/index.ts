@@ -10,12 +10,13 @@
 
 import Config, { ActionTypes, ConfigOptions } from '@forgerock/util-config';
 import { REQUESTED_WITH } from '@forgerock/util-shared';
-import { isOkOr4xx ,
-         withTimeout ,
-         middlewareWrapper ,
-         getEndpointPath, 
-         resolve 
-      } from '@forgerock/utils';
+import {
+  isOkOr4xx,
+  withTimeout,
+  middlewareWrapper,
+  getEndpointPath,
+  resolve,
+} from '@forgerock/utils';
 
 /**
  * Provides access to the session management API.

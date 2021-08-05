@@ -8,39 +8,57 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import Auth, { CallbackType, ErrorCode,  Callback, NameValue, PolicyRequirement, Step, StepDetail } from '@forgerock/util-auth';
+import Auth, {
+  CallbackType,
+  ErrorCode,
+  Callback,
+  NameValue,
+  PolicyRequirement,
+  Step,
+  StepDetail,
+} from '@forgerock/util-auth';
 import Config, { ConfigOptions, ValidConfigOptions } from '@forgerock/util-config';
 import Dispatcher, { CallbackContainer, FREvent, Listener } from '@forgerock/util-event';
 import FRAuth from '@forgerock/feature-fr-auth';
-import { FRCallback, 
- AttributeInputCallback ,
- ChoiceCallback ,
- ConfirmationCallback ,
- DeviceProfileCallback ,
- FRCallbackFactory ,
- HiddenValueCallback ,
- KbaCreateCallback ,
- MetadataCallback ,
- NameCallback ,
- PasswordCallback ,
- PollingWaitCallback ,
- ReCaptchaCallback ,
- RedirectCallback ,
- SelectIdPCallback, 
- IdPValue,
- SuspendedTextOutputCallback ,
- TermsAndConditionsCallback ,
- TextOutputCallback ,
- ValidatedCreatePasswordCallback ,
- ValidatedCreateUsernameCallback ,
- StepType ,
- FRLoginFailure ,
- FRLoginSuccess ,
- FRStep, FRStepHandler ,
- AuthResponse, FailureDetail } from '@forgerock/feature-fr-auth';
+import {
+  FRCallback,
+  AttributeInputCallback,
+  ChoiceCallback,
+  ConfirmationCallback,
+  DeviceProfileCallback,
+  FRCallbackFactory,
+  HiddenValueCallback,
+  KbaCreateCallback,
+  MetadataCallback,
+  NameCallback,
+  PasswordCallback,
+  PollingWaitCallback,
+  ReCaptchaCallback,
+  RedirectCallback,
+  SelectIdPCallback,
+  IdPValue,
+  SuspendedTextOutputCallback,
+  TermsAndConditionsCallback,
+  TextOutputCallback,
+  ValidatedCreatePasswordCallback,
+  ValidatedCreateUsernameCallback,
+  StepType,
+  FRLoginFailure,
+  FRLoginSuccess,
+  FRStep,
+  FRStepHandler,
+  AuthResponse,
+  FailureDetail,
+} from '@forgerock/feature-fr-auth';
 
 import { FRDevice } from '@forgerock/feature-fr-device';
-import { FRPolicy,defaultMessageCreator, MessageCreator, PolicyKey, ProcessedPropertyError } from '@forgerock/feature-fr-policy';
+import {
+  FRPolicy,
+  defaultMessageCreator,
+  MessageCreator,
+  PolicyKey,
+  ProcessedPropertyError,
+} from '@forgerock/feature-fr-policy';
 import { FRRecoveryCodes } from '@forgerock/feature-fr-recovery-codes';
 import { FRUI } from '@forgerock/feature-fr-ui';
 import { FRUser } from '@forgerock/feature-fr-user';
@@ -55,7 +73,7 @@ import {
 } from '@forgerock/feature-fr-webauthn';
 import { HttpClient } from '@forgerock/util-http-client';
 import {
-  OAuth2Client, 
+  OAuth2Client,
   GetAuthorizationUrlOptions,
   GetOAuth2TokensOptions,
   OAuth2Tokens,

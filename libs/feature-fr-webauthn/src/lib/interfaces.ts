@@ -9,9 +9,9 @@
  */
 
 import {
-  HiddenValueCallback ,
-  MetadataCallback ,
-  TextOutputCallback
+  HiddenValueCallback,
+  MetadataCallback,
+  TextOutputCallback,
 } from '@forgerock/feature-fr-auth';
 
 enum AttestationType {

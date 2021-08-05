@@ -10,11 +10,11 @@
 
 import { CallbackType } from '@forgerock/util-auth';
 import {
-        HiddenValueCallback,
-        MetadataCallback, 
-        FRStep,
-        TextOutputCallback
-      } from '@forgerock/feature-fr-auth';
+  HiddenValueCallback,
+  MetadataCallback,
+  FRStep,
+  TextOutputCallback,
+} from '@forgerock/feature-fr-auth';
 import { WebAuthnOutcome, WebAuthnOutcomeType, WebAuthnStepType } from './enums';
 import {
   arrayBufferToString,

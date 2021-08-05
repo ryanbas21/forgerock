@@ -8,7 +8,7 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-import { plural } from '@forgerock/utils'
+import { plural } from '@forgerock/utils';
 import { PolicyKey } from './enums';
 import { getProp } from './helpers';
 import { MessageCreator } from './interfaces';

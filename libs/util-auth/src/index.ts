@@ -1,6 +1,6 @@
 export { default } from './lib/index';
 export { CallbackType, ErrorCode } from './lib/enums';
-export { 
+export {
   Callback,
   FailedPolicyRequirement,
   NameValue,

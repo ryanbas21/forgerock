@@ -9,7 +9,7 @@
  */
 
 import { CallbackType } from '@forgerock/util-auth';
-import { FRStep, TextOutputCallback  } from '@forgerock/feature-fr-auth';
+import { FRStep, TextOutputCallback } from '@forgerock/feature-fr-auth';
 import { parseDisplayRecoveryCodesText } from './script-parser';
 
 /**

@@ -1,27 +1,27 @@
 {
   "version": 2,
   "projects": {
-    "angular-example-app": {
+    "example-app-angular": {
       "projectType": "application",
-      "root": "apps/angular-example-app",
-      "sourceRoot": "apps/angular-example-app/src",
+      "root": "apps/example-app-angular",
+      "sourceRoot": "apps/example-app-angular/src",
       "prefix": "forgerock",
       "targets": {
         "build": {
           "executor": "@angular-devkit/build-angular:browser",
           "outputs": ["{options.outputPath}"],
           "options": {
-            "outputPath": "dist/apps/angular-example-app",
-            "index": "apps/angular-example-app/src/index.html",
-            "main": "apps/angular-example-app/src/main.ts",
-            "polyfills": "apps/angular-example-app/src/polyfills.ts",
-            "tsConfig": "apps/angular-example-app/tsconfig.app.json",
+            "outputPath": "dist/apps/example-app-angular",
+            "index": "apps/example-app-angular/src/index.html",
+            "main": "apps/example-app-angular/src/main.ts",
+            "polyfills": "apps/example-app-angular/src/polyfills.ts",
+            "tsConfig": "apps/example-app-angular/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "apps/angular-example-app/src/favicon.ico",
-              "apps/angular-example-app/src/assets"
+              "apps/example-app-angular/src/favicon.ico",
+              "apps/example-app-angular/src/assets"
             ],
-            "styles": ["apps/angular-example-app/src/styles.scss"],
+            "styles": ["apps/example-app-angular/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -40,8 +40,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "apps/angular-example-app/src/environments/environment.ts",
-                  "with": "apps/angular-example-app/src/environments/environment.prod.ts"
+                  "replace": "apps/example-app-angular/src/environments/environment.ts",
+                  "with": "apps/example-app-angular/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -61,10 +61,10 @@
           "executor": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-example-app:build:production"
+              "browserTarget": "example-app-angular:build:production"
             },
             "development": {
-              "browserTarget": "angular-example-app:build:development"
+              "browserTarget": "example-app-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,50 +72,50 @@
         "extract-i18n": {
           "executor": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-example-app:build"
+            "browserTarget": "example-app-angular:build"
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "apps/angular-example-app/src/**/*.ts",
-              "apps/angular-example-app/src/**/*.html"
+              "apps/example-app-angular/src/**/*.ts",
+              "apps/example-app-angular/src/**/*.html"
             ]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/angular-example-app"],
+          "outputs": ["coverage/apps/example-app-angular"],
           "options": {
-            "jestConfig": "apps/angular-example-app/jest.config.js",
+            "jestConfig": "apps/example-app-angular/jest.config.js",
             "passWithNoTests": true
           }
         }
       }
     },
-    "angular-example-app-e2e": {
-      "root": "apps/angular-example-app-e2e",
-      "sourceRoot": "apps/angular-example-app-e2e/src",
+    "example-app-angular-e2e": {
+      "root": "apps/example-app-angular-e2e",
+      "sourceRoot": "apps/example-app-angular-e2e/src",
       "projectType": "application",
       "targets": {
         "e2e": {
           "executor": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/angular-example-app-e2e/cypress.json",
-            "tsConfig": "apps/angular-example-app-e2e/tsconfig.e2e.json",
-            "devServerTarget": "angular-example-app:serve:development"
+            "cypressConfig": "apps/example-app-angular-e2e/cypress.json",
+            "tsConfig": "apps/example-app-angular-e2e/tsconfig.e2e.json",
+            "devServerTarget": "example-app-angular:serve:development"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-example-app:serve:production"
+              "devServerTarget": "example-app-angular:serve:production"
             }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/angular-example-app-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["apps/example-app-angular-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -218,6 +218,178 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/example-app-react-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "example-app-svelte": {
+      "root": "apps/example-app-svelte",
+      "sourceRoot": "apps/example-app-svelte/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nxext/svelte:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/example-app-svelte",
+            "entryFile": "apps/example-app-svelte/src/main.ts",
+            "tsConfig": "apps/example-app-svelte/tsconfig.app.json",
+            "svelteConfig": "apps/example-app-svelte/svelte.config.cjs",
+            "assets": [
+              {
+                "glob": "/*",
+                "input": "apps/example-app-svelte/public/**",
+                "output": "./"
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "dev": false
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nxext/svelte:build",
+          "options": {
+            "outputPath": "dist/apps/example-app-svelte",
+            "entryFile": "apps/example-app-svelte/src/main.ts",
+            "tsConfig": "apps/example-app-svelte/tsconfig.app.json",
+            "svelteConfig": "apps/example-app-svelte/svelte.config.cjs",
+            "assets": [
+              {
+                "glob": "/*",
+                "input": "apps/example-app-svelte/public/**",
+                "output": "./"
+              }
+            ],
+            "watch": true,
+            "serve": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/example-app-svelte/**/*.{ts,svelte,spec.ts}"]
+          }
+        },
+        "check": {
+          "executor": "@nrwl/workspace:run-commands",
+          "options": {
+            "command": "svelte-check",
+            "cwd": "apps/example-app-svelte"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/example-app-svelte"],
+          "options": {
+            "jestConfig": "apps/example-app-svelte/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "example-app-svelte-e2e": {
+      "root": "apps/example-app-svelte-e2e",
+      "sourceRoot": "apps/example-app-svelte-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/example-app-svelte-e2e/cypress.json",
+            "tsConfig": "apps/example-app-svelte-e2e/tsconfig.e2e.json",
+            "devServerTarget": "example-app-svelte:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "example-app-svelte:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/example-app-svelte-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "example-app-vue": {
+      "projectType": "application",
+      "root": "apps/example-app-vue",
+      "sourceRoot": "apps/example-app-vue/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/example-app-vue",
+            "index": "apps/example-app-vue/public/index.html",
+            "main": "apps/example-app-vue/src/main.ts",
+            "tsConfig": "apps/example-app-vue/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "example-app-vue:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "example-app-vue:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/example-app-vue/**/*.{ts,tsx,vue}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/example-app-vue"],
+          "options": {
+            "jestConfig": "apps/example-app-vue/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "example-app-vue-e2e": {
+      "root": "apps/example-app-vue-e2e",
+      "sourceRoot": "apps/example-app-vue-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/example-app-vue-e2e/cypress.json",
+            "tsConfig": "apps/example-app-vue-e2e/tsconfig.e2e.json",
+            "devServerTarget": "example-app-vue:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "example-app-vue:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/example-app-vue-e2e/**/*.{js,ts}"]
           }
         }
       }
